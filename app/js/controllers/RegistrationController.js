@@ -9,11 +9,20 @@
 contactManager.controller("RegistrationController",
     function RegistrationController($scope,User,$location,localStorageService) {
     $scope.users = User.users;
-    $scope.user = [];
+    $scope.user = {
+        firstname:"",
+        lastname:"",
+        ctID: "",
+        phoneNumber: "",
+        extensionNumber: "",
+        emailId:"",
+        password: "",
+        contacts:[]
+    };
 
-    $scope.registerUser =function(user,users) {
-        console.log(user);
-        User.users.push(user);
+    $scope.registerUser =function(users) {
+        console.log($scope.user);
+        User.users.push($scope.user);
         $location.path("/home");
         }
     });
