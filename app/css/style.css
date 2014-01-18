@@ -1,0 +1,8 @@
+.content {
+    width: 80%;
+    margin: auto;
+}
+label {
+    width: 28%;
+    float: left;
+}

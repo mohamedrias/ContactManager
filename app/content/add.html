@@ -1,0 +1,14 @@
+<h1>Add Contacts</h1>
+<hr/>
+<form name="addContacts">
+    <label for="firstname">First Name: </label><input type="text" id="firstname" ng-model="user.firstname"/><br/>
+    <label for="lastname">Last Name: </label><input type="text" ng-model="user.lastname" id="lastname"/><br/>
+    <label for="ctID">CT ID: </label><input type="text" ng-model="user.ctID" id='ctID'/><br/>
+    <label for="phoneNumber">Phone Number: </label><input type="text" ng-model="user.phoneNumber" id='phoneNumber'/><br/>
+    <label for="extensionNumber">Extension: </label><input type="text" ng-model="user.extensionNumber" id='extensionNumber'/><br/>
+    <label for="emailId">Email: </label><input type="text" ng-model="user.emailId" id='emailId'/><br/>
+    <input type="submit" ng-click="addUser(user)" value="Add" class="btn-info" style="margin-left: 65%;"/>
+</form>
+
+
+

@@ -1,0 +1,26 @@
+<h1>Welcome {{ myUser.firstname }}</h1>
+<hr/>
+<label for="searchUser">Search Contacts :</label>
+<input type="search" id="searchUser" ng-model="userid"/>
+        <div>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <th>CT ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Extension Number</th>
+                    <th>Email Id:</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="users in allUsers | filter:userid">
+                        <td>{{ users.ctID }}</td>
+                        <td>{{ users.firstname }}</td>
+                        <td>{{ users.lastname }}</td>
+                        <td>{{ users.phoneNumber }}</td>
+                        <td>{{ users.extensionNumber }}</td>
+                        <td>{{ users.emailId }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>

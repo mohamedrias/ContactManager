@@ -1,0 +1,15 @@
+<h1 class="">{{ title }}</h1>
+<hr/>
+        <div class='alert-info' ng-show="invalidUser">
+            <p>Please enter valid username and password</p>
+        </div>
+<div class="container-fluid row-fluid">
+    <form name="loginForm">
+        <label for="ctID">CT ID :</label> <input type="text" id="ctID" ng-model="loginUser.ctID"/><br>
+        <label for="password">Password : </label><input type="password" id="password" ng-model="loginUser.password"/>
+        <button type="submit" ng-click="validateUser(loginUser,users)" class="btn pull-left" style='margin-left: 55%;'>Login</button>
+        <br/>
+    </form>
+    <br><hr/>
+    <a href="#/register" style="margin-left: 40%;" >New User register here!</a>
+</div>

@@ -1,0 +1,52 @@
+<!doctype html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en" ng-app="contactManager">
+<head>
+    <title>Contact Manager App</title>
+    <link type="text/css" rel="stylesheet" href="app/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="app/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="app/css/style.css"/>
+</head>
+
+<body>
+
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <a class="brand" href="#/">Contact Manager</a>
+
+        <ul class="nav">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/profile">Profile</a></li>
+            <li><a href="#/add/">Add</a></li>
+            <li><a href="#/login">Login</a></li>
+            <li><a href="#/register">Register</a></li>
+        </ul>
+
+
+
+
+        <ul class="nav pull-right">
+            <li><a href="#/login">login</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+        <ng-view></ng-view>
+    </div>
+ </div>
+
+<script type="text/javascript" src="app/lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/js/services/UserServices.js"></script>
+<script type="text/javascript" src="app/js/controllers/LoginController.js"></script>
+<script type="text/javascript" src="app/js/controllers/RegistrationController.js"></script>
+<script type="text/javascript" src="app/js/controllers/HomeController.js"></script>
+<script type="text/javascript" src="app/js/controllers/ProfileController.js"></script>
+<script type="text/javascript" src="app/lib/angular/module/localStorageModule.js"></script>
+<script type="text/javascript" src="app/js/controllers/AddContactsController.js"></script>
+<script type="text/javascript" src="app/js/controllers/NavMenuController.js"></script>
+</body>
+</html>
